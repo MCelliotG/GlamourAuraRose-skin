@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ -f /tmp/GlamourAuraRose/skin.xml ]; then
+  rm -rf /usr/share/enigma2/GlamourAuraRose/
+  mv /tmp/GlamourAuraRose /usr/share/enigma2/
+fi
+echo "                                                                                 "
+echo "Glamour Aura Rose skin for OpenPLI is now successfully installed in your receiver"
+echo "                             Enjoy!!!                                            "
