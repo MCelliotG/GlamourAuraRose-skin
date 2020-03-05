@@ -1,12 +1,12 @@
 <skin>
-  <!-- Glamour Aura Rose by MCelliot_g for OpenPLI 6.2/7.0/SDG based images -->
+  <!-- Glamour Aura Rose by MCelliotG for OpenPLI 6.2/7.0+ based images -->
   <!-- LICENSE: This skin is licensed under GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007. -->
   <!-- This skin was created for new generation Enigma2 receivers. MINIMAL requirement is an STB running Enigma2 with a dual CPU @ 751 MHz. -->
   <!-- This skin is not guaranteed to work in older E2 receivers with slower CPUs. Use at your own risk. -->
   <!-- This skin is FREE software. You can use it for free on your E2 receivers running OpenPLI 6.2 and newer and other recent PLI-based images. -->
   <!-- You are NOT allowed to modify the first line of the skin and its graphics. -->
   <!-- The skin is OPEN source. The source code of this skin is available at https://github.com/MCelliotG/GlamourAuraRose-skin/ -->
-  <!-- This skin has original graphics made by MCelliot_g. You are allowed to modify the code for personal use as long as you keep this License for the skin. -->
+  <!-- This skin has original graphics made by MCelliotG. You are allowed to modify the code for personal use as long as you keep this License for the skin. -->
   <!-- You are NOT allowed to redistribute the skin with any modifications without the author's permission. -->
   <!-- The converters and renderers used in the skin can be modified and redistributed as noted. -->
   <!-- You are allowed and encouraged to commit changes and suggestions to github. Pull requests will be pushed after reviewed by the author. -->
@@ -16,8 +16,13 @@
   <output id="0">
     <resolution xres="1920" yres="1080" bpp="32" />
   </output>
+<<<<<<< Updated upstream
   <include filename="/usr/share/enigma2/GlamourAuraRose/skin_glamouraurafhd_plugins.xml" />
   <include filename="/usr/share/enigma2/GlamourAuraRose/skin_glamouraurafhd_sdg.xml" />
+=======
+  <include filename="/usr/share/enigma2/GlamourAuraRose/skin_glamouraurarose_plugins.xml" />
+  <include filename="/usr/share/enigma2/GlamourAuraRose/skin_glamouraurarose_images.xml" />
+>>>>>>> Stashed changes
   <colors>
     <color name="amarillo" value="#00ffffc6" />
     <color name="amaryllis" value="#00bb2570" />
@@ -28,13 +33,16 @@
     <color name="background90" value="#90000000" />
     <color name="backUI" value="#00003258" />
     <color name="berry" value="#00b670ff" />
-    <color name="berry2" value="#004a4cff" />
+    <color name="berry2" value="#00706dff" />
     <color name="black" value="#00000000" />
     <color name="blue" value="#000064c7" />
     <color name="cabbage" value="#0070ad11" />
     <color name="clearcyan" value="#300090e6" />
+    <color name="clearlawn" value="#300cac5c" />
+    <color name="clearlime" value="#3018ce18" />
     <color name="clearorange" value="#30f47d19" />
     <color name="clearpurple" value="#306c0aab" />
+    <color name="clearrose" value="#30ce0020" />
     <color name="clearsky" value="#3018b9ce" />
     <color name="cyan" value="#000090e6" />
     <color name="cyan1" value="#0000deff" />
@@ -166,12 +174,12 @@
     <color name="LabelForeground" color="white" />
     <color name="ListboxBackground" color="background20" />
     <color name="ListboxForeground" color="white" />
-    <color name="ListboxSelectedBackground" color="clearcyan" />
+    <color name="ListboxSelectedBackground" color="clearrose" />
     <color name="ListboxSelectedForeground" color="white" />
     <color name="ListboxMarkedBackground" color="cabbage" />
     <color name="ListboxMarkedForeground" color="transred" />
-    <color name="ListboxMarkedAndSelectedBackground" color="clearsky" />
-    <color name="ListboxMarkedAndSelectedForeground" color="maroon" />
+    <color name="ListboxMarkedAndSelectedBackground" color="rose" />
+    <color name="ListboxMarkedAndSelectedForeground" color="red" />
     <color name="WindowTitleForeground" color="white" />
     <color name="WindowTitleBackground" color="amaryllis" />
     <borderset name="bsWindow">
@@ -415,6 +423,22 @@
     <widget name="cancel" position="535,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
     <widget name="ok" position="860,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
   </screen>
+  <screen name="RGKeys1" flags="wfNoBorder">
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="GlamourAuraRose/buttons/aura_red.png" position="845,870" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_red,red,Button,Label" pixmap="GlamourAuraRose/buttons/aura_red.png" position="845,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="GlamourAuraRose/buttons/aura_green.png" position="1150,870" size="225,75" alphatest="blend" zPosition="5" transparent="1">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap objectTypes="key_green,green,Button,Label" pixmap="GlamourAuraRose/buttons/aura_green.png" position="1150,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="805,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="red,Label,Button" name="red" position="805,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="805,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="1110,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="green,Label,Button" name="green" position="1110,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="1110,855" size="305,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
+  </screen>
   <screen name="RedKey3" flags="wfNoBorder">
     <ePixmap pixmap="GlamourAuraRose/buttons/aura_red.png" position="880,870" size="225,75" alphatest="blend" zPosition="5" transparent="1" />
     <widget source="key_red" render="Label" position="835,855" size="320,90" zPosition="6" font="Regular; 30" halign="center" backgroundColor="background20" transparent="1" valign="bottom" />
@@ -449,20 +473,6 @@
       </convert>
     </widget>
     <ePixmap pixmap="GlamourAuraRose/skin_default/icons/mp_buttons.png" position="1440,960" size="192,40" alphatest="blend" zPosition="4" transparent="1" />
-  </screen>
-  <screen name="MenuPM" flags="wfNoBorder">
-    <widget source="list" render="Listbox" position="540,90" size="1305,600" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraRose/selections/lanselfhd.png" alphatest="blend" zPosition="5">
-      <convert type="TemplatedMultiContent">
-        {"template": [
-            MultiContentEntryPixmapAlphaTest(pos = (30, 22), size = (72, 72), png = 2), # index 2 is the status pixmap
-            MultiContentEntryText(pos = (115, 5), size = (1155, 60), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-            MultiContentEntryText(pos = (115, 65), size = (1155, 55), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
-          ],
-        "fonts": [gFont("RegularB", 36),gFont("Regular", 27)],
-        "itemHeight": 120
-        }
-      </convert>
-    </widget>
   </screen>
   <!-- 02-0. Menu General -->
   <screen name="MainMenuTiles" flags="wfNoBorder">
@@ -772,7 +782,7 @@
       <convert type="MenuEntryCompare">iptv_config</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="menu" render="Pixmap" pixmap="GlamourAuraRose/icons/view.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraRose/icons/serviceapp.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">serviceapp_setup</convert>
       <convert type="ConditionalShowHide" />
     </widget>
@@ -972,6 +982,14 @@
     </widget>
     <widget source="menu" render="Pixmap" pixmap="GlamourAuraRose/icons/ui.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
       <convert type="MenuEntryCompare">user_interface</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraRose/icons/skins.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+      <convert type="MenuEntryCompare">primary_skin_selector</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="GlamourAuraRose/icons/lcdskin.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
+      <convert type="MenuEntryCompare">display_skin_selector</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" pixmap="GlamourAuraRose/icons/skins.png" position="515,425" size="180,180" scale="1" transparent="1" alphatest="on" zPosition="5">
@@ -1257,10 +1275,17 @@
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
+<<<<<<< Updated upstream
     <widget source="session.Event_Now" render="GlamRoll" position="595,835" size="840,50" font="Regular; 40" halign="left" transparent="1" backgroundColor="background20" foregroundColor="white" valign="center" noWrap="1" zPosition="11">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="1450,835" size="180,50" font="Regular; 33" halign="left" transparent="1" backgroundColor="background20" foregroundColor="white" noWrap="1" zPosition="6" valign="center">
+=======
+    <widget source="session.Event_Now" render="GlamRoll" position="595,835" size="840,50" font="Regular; 38" halign="left" transparent="1" backgroundColor="background20" foregroundColor="white" valign="top" noWrap="1" zPosition="11">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="1450,835" size="180,50" font="Regular; 33" halign="left" transparent="1" backgroundColor="background20" foregroundColor="white" noWrap="1" zPosition="6" valign="top">
+>>>>>>> Stashed changes
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
@@ -1268,10 +1293,17 @@
     <widget source="session.Event_Now" render="Progress" pixmap="GlamourAuraRose/pointers/pointer_infobar.png" alphatest="blend" position="360,887" size="1270,7" zPosition="7" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
+<<<<<<< Updated upstream
     <widget source="session.Event_Next" render="GlamRoll" position="595,895" size="840,40" font="Regular; 32" halign="left" transparent="1" foregroundColor="black" backgroundColor="grey2" valign="center" noWrap="1" zPosition="11">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="session.Event_Next" render="Label" position="360,895" size="105,40" font="Regular; 32" halign="center" transparent="1" backgroundColor="grey" foregroundColor="background20" zPosition="11" noWrap="1" valign="center">
+=======
+    <widget source="session.Event_Next" render="GlamRoll" position="595,895" size="840,40" font="Regular; 30" halign="left" transparent="1" foregroundColor="black" backgroundColor="grey2" valign="top" noWrap="1" zPosition="11">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="360,895" size="105,40" font="Regular; 30" halign="center" transparent="1" backgroundColor="grey" foregroundColor="background20" zPosition="11" noWrap="1" valign="top">
+>>>>>>> Stashed changes
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -1813,10 +1845,10 @@
   <!-- Provider name and Reference -->
   <screen name="P+RInfobar" flags="wfNoBorder">
     <ePixmap pixmap="GlamourAuraRose/infobar/infobar_provider2IB.png" position="425,130" zPosition="-12" size="1240,50" alphatest="on" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1045,140" size="600,35" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center" foregroundColor="deepgrey">
+    <widget source="session.CurrentService" render="Label" position="1045,130" size="600,50" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center" foregroundColor="deepgrey">
       <convert type="ServiceName">Provider</convert>
     </widget>
-    <widget source="session.CurrentService" render="GlamRoll" position="440,140" size="600,35" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center">
+    <widget source="session.CurrentService" render="GlamRoll" position="440,130" size="600,50" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center">
       <convert type="ServiceName">Reference</convert>
     </widget>
   </screen>
@@ -1863,7 +1895,7 @@
   <screen name="PIDSInfobar" flags="wfNoBorder">
     <ePixmap pixmap="GlamourAuraRose/infobar/infobar_pidinfo.png" position="885,195" zPosition="-12" size="1035,52" alphatest="on" transparent="1" />
     <ePixmap pixmap="GlamourAuraRose/menu/accentglowt500.png" position="1140,195" size="500,45" zPosition="-10" alphatest="blend" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="905,205" size="950,35" font="Regular; 26" transparent="1" zPosition="5" foregroundColor="white" backgroundColor="background20" halign="right" valign="center" noWrap="1" text="PidInfo">
+    <widget source="session.CurrentService" render="Label" position="905,195" size="950,50" font="Regular; 26" transparent="1" zPosition="5" foregroundColor="white" backgroundColor="background20" halign="right" valign="center" noWrap="1" text="PidInfo">
       <convert type="GlamourBase">PidInfo</convert>
     </widget>
   </screen>
@@ -2462,7 +2494,7 @@
     <panel name="MainInfobar" />
     <!-- Provider -->
     <ePixmap pixmap="GlamourAuraRose/infobar/infobar_provider.png" position="980,130" zPosition="-2" size="675,50" alphatest="on" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1045,140" size="600,35" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center" foregroundColor="deepgrey">
+    <widget source="session.CurrentService" render="Label" position="1045,130" size="600,50" font="Regular; 26" valign="center" backgroundColor="deepgrey" transparent="1" zPosition="7" halign="center" foregroundColor="deepgrey">
       <convert type="ServiceName">Provider</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraRose/infobar/halo_bottom.png" position="0,975" zPosition="-12" size="1920,88" alphatest="off" transparent="1" />
@@ -2782,22 +2814,22 @@
     <panel name="FullKeys1" />
   </screen>
   <!-- 08. Numerical Input -->
-  <screen name="NumericalTextInputHelpDialog" position="540,855" size="1305,90" backgroundColor="background20" flags="wfNoBorder" zPosition="12">
-    <ePixmap pixmap="GlamourAuraRose/menu/accentglowt810.png" position="30,0" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="GlamourAuraRose/menu/accentglowb810.png" position="470,45" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
-    <widget name="key1" position="50,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-    <widget name="key2" position="280,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-    <widget name="key3" position="510,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-    <widget name="key4" position="740,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-    <widget name="key5" position="970,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-    <widget name="key6" position="50,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-    <widget name="key7" position="280,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-    <widget name="key8" position="510,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-    <widget name="key9" position="740,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-    <widget name="key0" position="970,45" size="285,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-    <widget name="help1" position="0,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="amaryllis" />
-    <widget name="help2" position="1255,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="amaryllis" />
-  </screen>
+  <screen name="NumericalTextInputHelpDialog" position="540,760" size="1305,90" backgroundColor="background20" flags="wfNoBorder" zPosition="12">
+  <ePixmap pixmap="GlamourAuraRose/menu/accentglowt810.png" position="30,0" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="GlamourAuraRose/menu/accentglowb810.png" position="470,45" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
+  <widget name="key1" position="50,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+  <widget name="key2" position="280,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+  <widget name="key3" position="510,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+  <widget name="key4" position="740,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+  <widget name="key5" position="970,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+  <widget name="key6" position="50,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+  <widget name="key7" position="280,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+  <widget name="key8" position="510,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+  <widget name="key9" position="740,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+  <widget name="key0" position="970,45" size="285,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+  <widget name="help1" position="0,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="amaryllis" />
+  <widget name="help2" position="1255,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="amaryllis" />
+</screen>
   <!-- 09. Subtitles -->
   <screen name="Subtitles" position="0,0" size="1920,1080" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground1" />
@@ -2871,7 +2903,7 @@
     <panel name="Title1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/about.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="AboutScrollLabel" position="540,90" size="1305,720" font="Regular; 36" halign="left" backgroundColor="background20" transparent="1" foregroundColor="rose1" split="1" dividechar=":" colposition="0" zPosition="6" />
-    <eLabel text="Glamour Aura Rose Skin by MCelliot_g" position="75,705" size="400,155" font="Regular; 42" backgroundColor="transparent" shadowColor="black" shadowOffset="-2,-2" transparent="1" valign="top" halign="center" zPosition="1" />
+    <eLabel text="Glamour Aura Rose Skin by MCelliotG" position="75,705" size="400,155" font="Regular; 42" backgroundColor="transparent" shadowColor="black" shadowOffset="-2,-2" transparent="1" valign="top" halign="center" zPosition="1" />
     <panel name="FullKeys1" />
   </screen>
   <!-- 02. Service Info -->
@@ -2906,7 +2938,7 @@
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/info.png" alphatest="on" transparent="1" zPosition="5" />
     <widget source="TranslatorName" render="Label" position="540,90" size="1305,165" font="Regular; 36" halign="left" backgroundColor="background20" transparent="1" foregroundColor="amaryllis" zPosition="6" />
     <widget source="TranslationInfo" render="Label" position="540,270" size="1305,585" font="Regular; 36" halign="left" backgroundColor="background20" transparent="1" zPosition="8" />
-    <eLabel text="Glamour Aura Rose Skin by MCelliot_g" position="75,705" size="400,155" font="Regular; 42" backgroundColor="transparent" shadowColor="black" shadowOffset="-2,-2" transparent="1" valign="top" halign="center" zPosition="1" />
+    <eLabel text="Glamour Aura Rose Skin by MCelliotG" position="75,705" size="400,155" font="Regular; 42" backgroundColor="transparent" shadowColor="black" shadowOffset="-2,-2" transparent="1" valign="top" halign="center" zPosition="1" />
   </screen>
   <!-- 05. Commit Info -->
   <screen name="CommitInfo" position="0,0" size="1920,1080" title="CommitInfo" backgroundColor="transparent" flags="wfNoBorder" alphatest="on">
@@ -2974,7 +3006,11 @@
     <widget source="ServiceEvent" render="Label" position="265,15" size="510,100" font="RegularB; 34" backgroundColor="amaryllis" transparent="1" valign="bottom" halign="center" foregroundColor="white" zPosition="7">
       <convert type="ServiceName">Name</convert>
     </widget>
+<<<<<<< Updated upstream
     <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=2,repeat=2,startdelay=1000,nowrap,oneshot=1,always=0" position="50,170" size="715,50" font="RegularB; 34" backgroundColor="grey2" transparent="1" valign="center" halign="center" foregroundColor="black" zPosition="7">
+=======
+    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=left,steptime=2,repeat=2,startdelay=1000,nowrap,oneshot=1,always=0" position="50,168" size="720,50" font="RegularB; 32" backgroundColor="grey2" transparent="1" valign="center" halign="center" foregroundColor="black" zPosition="7">
+>>>>>>> Stashed changes
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="265,115" size="95,45" font="Numbers; 42" backgroundColor="background20" transparent="1" halign="center" valign="center" zPosition="6" noWrap="1">
@@ -3135,7 +3171,7 @@
     <!-- Frequency Info  -->
     <widget position="50,995" size="720,40" source="ServiceEvent" render="GlamTP" font="Regular;26" noWrap="1" halign="left" valign="center" backgroundColor="grey2" zPosition="8" transparent="1" foregroundColor="black" />
     <!-- Picon and TunerInfos  -->
-    <eLabel position="1681,790" size="2,75" halign="center" font="Regular; 25" backgroundColor="blue" transparent="0" valign="center" zPosition="6" noWrap="1" foregroundColor="blue" />
+    <eLabel position="1681,790" size="2,75" halign="center" font="Regular; 25" backgroundColor="red" transparent="0" valign="center" zPosition="6" noWrap="1" foregroundColor="red" />
     <eLabel position="1682,790" size="1,75" halign="center" font="Regular; 25" backgroundColor="rose" transparent="0" valign="center" zPosition="6" noWrap="1" foregroundColor="rose" />
     <widget source="ServiceEvent" render="Picon" position="45,790" zPosition="4" size="330,198" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
@@ -3903,16 +3939,32 @@
     <ePixmap position="255,315" size="400,400" pixmap="GlamourAuraRose/icons/tv.png" alphatest="on" transparent="1" zPosition="5" />
   </screen>
   <!-- 10. Skin Selector -->
-  <screen name="SkinSelector" position="0,0" size="1920,1080" title="Skin Selector" flags="wfNoBorder" backgroundColor="transparent" alphatest="on">
-    <panel name="MenuBackground" flags="wfNoBorder" />
+  <screen name="SkinSelector" position="0,0" size="1920,1080" title="GUI Skin" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="MenuBackground" />
     <panel name="ClockLabel1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/skins.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget name="Preview" position="460,360" size="320,320" transparent="1" alphatest="on" zPosition="5" />
-    <widget name="SkinList" font="Regular; 30" position="810,80" size="930,650" scrollbarMode="showOnDemand" backgroundColor="background20" foregroundColor="white" itemHeight="50" enableWrapAround="1" transparent="1" selectionPixmap="GlamourAuraRose/selections/listsel930.png" alphatest="blend" zPosition="6" />
-    <widget source="introduction" render="Label" position="810,730" size="930,80" font="Regular; 33" halign="center" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="rose1" />
-    <panel name="RedKey3" />
+    <widget source="skins" render="Listbox" position="805,75" size="900,700" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraRose/selections/contextsel.png" alphatest="blend" zPosition="6">
+      <convert type="TemplatedMultiContent">
+     {
+     "template": [
+                 MultiContentEntryText(pos = (5,0), size = (590,50), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
+                 MultiContentEntryText(pos = (600,0), size = (300,50), font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2), # description
+                  ],
+                  "fonts": [ gFont("RegularB", 34), gFont("Regular", 30) ],
+                  "itemHeight": 50
+      }
+     </convert>
+    </widget>
+    <widget name="preview" position="460,355" size="320,320" transparent="1" alphatest="on" zPosition="6" />
+    <widget source="description" render="Label" position="805,805" size="905,50" font="Regular; 32" halign="center" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="rose1" />
+    <panel name="RGKeys1" />
     <panel name="Title1" />
+    <!-- Old widgets -->
+    <widget name="Preview" position="460,355" size="320,320" transparent="1" alphatest="on" zPosition="5" />
+    <widget source="introduction" render="Label" position="805,805" size="905,50" font="Regular; 32" halign="center" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="rose1" />
+    <widget name="SkinList" font="RegularB; 32" position="805,75" size="900,700" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraRose/selections/contextsel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="5" />
   </screen>
+  <screen name="SkinSelectorSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
   <!-- 11. Subtitle Quickmenu -->
   <screen name="QuickSubtitlesConfigMenu" title="Subtitle Quickmenu" position="0,0" size="1920,575" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="GlamourAuraRose/menu/accentglowtl.png" position="0,0" size="300,270" zPosition="-10" alphatest="blend" transparent="1" />
@@ -4251,7 +4303,7 @@ if not self["videofps"].text:
     <panel name="Title1" />
     <ePixmap position="15,315" size="400,400" pixmap="GlamourAuraRose/icons/filecommander.png" alphatest="on" transparent="1" zPosition="5" />
     <eLabel position="1135,75" size="2,780" backgroundColor="rose1" zPosition="12" foregroundColor="rose1" />
-    <eLabel position="1134,75" size="2,780" backgroundColor="blue" zPosition="12" foregroundColor="blue" />
+    <eLabel position="1134,75" size="2,780" backgroundColor="red" zPosition="12" foregroundColor="red" />
     <widget name="text" position="420,75" size="705,55" font="Regular; 33" backgroundColor="background20" transparent="1" zPosition="4" foregroundColor="amaryllis" halign="center" />
     <widget name="target" position="420,135" size="705,55" font="Regular; 33" backgroundColor="background20" transparent="1" zPosition="4" foregroundColor="rose1" halign="center" />
     <widget name="filelist" font="Regular;32" position="420,200" size="705,650" itemHeight="50" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraRose/selections/boxsel.png" alphatest="blend" transparent="1" zPosition="5" />
@@ -5156,85 +5208,90 @@ if not self["videofps"].text:
   </screen>
   <!-- 06. Packet Manager -->
   <screen name="PacketManager" position="0,0" size="1920,1080" title="PacketManager" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="MainBackground2" />
-    <panel name="ClockLabel1" />
-    <panel name="Title1" />
-    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
+  <panel name="MainBackground2" />
+  <panel name="ClockLabel1" />
+  <panel name="Title1" />
+  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
     <widget source="list" render="Listbox" position="540,90" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraRose/selections/aurasel1305.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [
-            MultiContentEntryPixmapAlphaTest(pos = (20, 15), size = (72, 72), png = 4), # index 4 is the status pixmap
-            MultiContentEntryText(pos = (100, 2), size = (1200, 50), font=0, flags = RT_HALIGN_LEFT, text = 0, color=0xce0020, color_sel=0xe94457), # index 0 is the name
+            MultiContentEntryPixmapAlphaBlend(pos = (20, 15), size = (72, 72), png = 4), # index 4 is the status pixmap
+            MultiContentEntryText(pos = (100, 0), size = (1200, 50), font=0, flags = RT_HALIGN_LEFT, text = 0, color=0xce0020, color_sel=0xe94457), # index 0 is the name
             MultiContentEntryText(pos = (100, 50), size = (1200, 40), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
-            MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (0, 0), png = 5), # index 4 is the div pixmap
+            MultiContentEntryPixmapAlphaBlend(pos = (0, 90), size = (0, 0), png = 5), # index 4 is the div pixmap
           ],
-        "fonts": [gFont("RegularB", 34),gFont("Regular", 26)],
+        "fonts": [gFont("RegularB", 34),gFont("Regular", 27)],
         "itemHeight": 90
         }
       </convert>
     </widget>
-    <panel name="FullKeys1" />
-  </screen>
+  <panel name="FullKeys1" />
+</screen>
   <!-- 07. Plugin Details -->
   <screen name="PluginDetails" position="0,0" size="1920,1080" title="Plugin details" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget name="statuspic" position="600,90" size="75,75" alphatest="blend" transparent="1" zPosition="5" />
-    <widget source="author" render="Label" position="705,90" size="1140,75" font="Regular;27" backgroundColor="background20" transparent="1" zPosition="6" halign="left" valign="bottom" foregroundColor="amaryllis" />
-    <eLabel position="600,172" size="1245,3" backgroundColor="rose" zPosition="3" transparent="0" foregroundColor="rose1" />
+    <widget name="statuspic" position="600,90" size="75,75" alphatest="blend" transparent="1" zPosition="5" scale="1" />
+    <widget source="author" render="Label" position="705,90" size="1140,75" font="RegularB; 36" backgroundColor="background20" transparent="1" zPosition="6" halign="left" valign="center" foregroundColor="amaryllis" />
+    <eLabel position="600,170" size="1245,3" backgroundColor="rose" zPosition="3" transparent="0" foregroundColor="rose1" />
     <widget name="screenshot" position="600,315" size="480,345" zPosition="10" alphatest="blend" transparent="1" />
-    <widget name="detailtext" position="1110,185" size="735,630" font="Regular; 30" foregroundColor="white" backgroundColor="background20" transparent="1" zPosition="8" halign="left" valign="top" />
+    <widget name="detailtext" position="1110,185" size="735,630" font="Regular; 34" foregroundColor="white" backgroundColor="background20" transparent="1" zPosition="8" halign="center" valign="center" />
     <panel name="FullKeys1" />
   </screen>
   <!-- 08. Plugin Manager -->
   <screen name="PluginManager" position="0,0" size="1920,1080" title="Plugin manager" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="MainBackground2" />
-    <panel name="ClockLabel1" />
-    <panel name="Title1" />
-    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
-    <widget source="list" render="Listbox" position="540,90" size="1305,640" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraRose/selections/updatesel.png" alphatest="blend" zPosition="5">
-      <convert type="TemplatedMultiContent">
+  <panel name="MainBackground2" />
+  <panel name="ClockLabel1" />
+  <panel name="Title1" />
+  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
+  <widget source="list" render="Listbox" position="540,90" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraRose/selections/aurasel1305.png" alphatest="blend" zPosition="5">
+    <convert type="TemplatedMultiContent">
       {"templates":
-        {"default": (80,[
-            MultiContentEntryPixmapAlphaTest(pos = (30, 4), size = (72, 72), png = 5), # index 5 is the status pixmap
-            MultiContentEntryText(pos = (120, 2), size = (1180, 50), font=0, flags = RT_HALIGN_LEFT, text = 0, color=0xce0020, color_sel=0xe94457), # index 0 is the name
-            MultiContentEntryText(pos = (120, 50), size = (1155, 40), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+        {"default": (90,[
+            MultiContentEntryPixmapAlphaBlend(pos = (30, 9), size = (72, 72), png = 5), # index 5 is the status pixmap
+            MultiContentEntryText(pos = (120, 0), size = (1180, 45), font=0, flags = RT_HALIGN_LEFT, text = 0, color=0xce0020, color_sel=0xe94457), # index 0 is the name
+            MultiContentEntryText(pos = (120, 45), size = (1155, 45), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
           ]),
-        "category": (80,[
-            MultiContentEntryText(pos = (20, 2), size = (1280, 50), font=0, flags = RT_HALIGN_LEFT, text = 0, color=0xce0020, color_sel=0xe94457), # index 0 is the name
-            MultiContentEntryText(pos = (20, 50), size = (1280, 40), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
+        "category": (90,[
+            MultiContentEntryText(pos = (20, 0), size = (1280, 45), font=0, flags = RT_HALIGN_LEFT, text = 0, color=0xce0020, color_sel=0xe94457), # index 0 is the name
+            MultiContentEntryText(pos = (20, 45), size = (1280, 45), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the description
           ])
         },
-        "fonts": [gFont("RegularB", 34),gFont("Regular", 26)],
-        "itemHeight": 80
+        "fonts": [gFont("RegularB", 34),gFont("Regular", 27)],
+        "itemHeight": 90
       }
       </convert>
-    </widget>
-    <widget source="status" render="Label" position="540,760" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="amaryllis" backgroundColor="background20" />
-    <panel name="FullKeys1" />
-  </screen>
+  </widget>
+  <widget source="status" render="Label" position="540,810" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="amaryllis" backgroundColor="background20" />
+  <panel name="FullKeys1" />
+</screen>
   <!-- 09. Plugin Manager Info -->
   <screen name="PluginManagerInfo" position="0,0" size="1920,1080" title="Plugin manager activity" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="MainBackground2" />
-    <panel name="ClockLabel1" />
-    <panel name="Title1" />
-    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
-    <panel name="MenuPM" />
-    <widget source="status" render="Label" position="540,760" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="amaryllis" backgroundColor="background20" />
-    <panel name="FullKeys1" />
-  </screen>
+  <panel name="MainBackground2" />
+  <panel name="ClockLabel1" />
+  <panel name="Title1" />
+  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
+  <widget source="list" render="Listbox" position="540,80" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraRose/selections/updatesel.png" alphatest="blend" zPosition="5">
+  <convert type="TemplatedMultiContent">
+        {"template": [
+            MultiContentEntryPixmapAlphaBlend(pos = (10, 4), size = (72, 72), flags = BT_SCALE, png = 2), # index 2 is the status pixmap
+            MultiContentEntryText(pos = (90, 0), size = (1200, 45), font=0, flags = RT_HALIGN_LEFT, text = 0, color=0xce0020, color_sel=0xe94457), # index 0 is the name
+            MultiContentEntryText(pos = (90, 45), size = (1200, 35), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the state
+          ],
+        "fonts": [gFont("RegularB", 34),gFont("Regular", 25)],
+        "itemHeight": 80
+        }
+      </convert>
+  </widget>
+  <widget source="status" render="Label" position="540,800" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="amaryllis" backgroundColor="background20" />
+  <panel name="FullKeys1" />
+ </screen>
   <!-- 10. Plugin Manager Help -->
   <screen name="PluginManagerHelp" position="0,0" size="1920,1080" title="Plugin manager help" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="MainBackground2" />
-    <panel name="ClockLabel1" />
-    <panel name="Title1" />
-    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
-    <panel name="MenuPM" />
-    <widget source="status" render="Label" position="540,735" size="1305,60" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="amaryllis" backgroundColor="background20" />
-    <panel name="FullKeys1" />
-  </screen>
+  <panel name="PluginManagerInfo" />
+</screen>
   <!-- 11. Restore Menu Image -->
   <screen name="RestoreMenuImage" position="0,0" size="1920,1080" title="Restore Backups" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
@@ -5614,7 +5671,7 @@ if not self["videofps"].text:
   </screen>
   <!-- 02. ServiceApp -->
   <screen name="ServiceAppDetectPlayers" position="0,0" size="1920,1080" zPosition="1" title="Message" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="GlamourAuraRose/icons/view.png" position="255,315" size="400,400" zPosition="2" transparent="1" alphatest="on" />
+    <ePixmap pixmap="GlamourAuraRose/icons/serviceapp.png" position="255,315" size="400,400" zPosition="2" transparent="1" alphatest="on" />
     <ePixmap pixmap="GlamourAuraRose/menu/menuhalo.png" position="562,60" size="232,900" transparent="1" alphatest="off" zPosition="-11" />
     <eLabel name="menubig" position="795,0" size="1050,1005" backgroundColor="background20" foregroundColor="background20" zPosition="-11" />
     <ePixmap pixmap="GlamourAuraRose/menu/menufaderight.png" position="1845,0" zPosition="-11" size="75,1080" alphatest="off" transparent="1" />

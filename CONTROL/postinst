@@ -1,8 +1,11 @@
 #!/bin/sh
 if [ -f /tmp/GlamourAuraRose/skin.xml ]; then
-  rm -rf /usr/share/enigma2/GlamourAuraRose/
-  mv /tmp/GlamourAuraRose /usr/share/enigma2/
+	rm -rf /usr/share/enigma2/GlamourAuraRose/
+	mv /tmp/GlamourAuraRose /usr/share/enigma2/
 fi
-echo "                                                                                 "
-echo "Glamour Aura Rose skin for OpenPLI is now successfully installed in your receiver"
-echo "                             Enjoy!!!                                            "
+echo "                                                                                "
+echo "Glamour Aura Rose main files installed, now linking common files to main skin..." 
+cp -Rs /usr/share/enigma2/GlamourAuraFHD/* /usr/share/enigma2/GlamourAuraRose 2>/dev/null
+echo "                                                                     "
+echo "Glamour Aura Rose skin is now successfully installed on your receiver"
+echo "                         Enjoy!!!                                    "
