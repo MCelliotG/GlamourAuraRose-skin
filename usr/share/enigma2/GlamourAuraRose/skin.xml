@@ -1302,26 +1302,26 @@
   <screen name="TunerInfobar" flags="wfNoBorder">
     <!-- Frequency, Orbital & Streamtypes -->
     <ePixmap pixmap="GlamourAuraRose/infobar/infobar_tuner.png" position="395,40" zPosition="-12" size="1260,85" alphatest="off" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="410,50" size="870,35" backgroundColor="background20" transparent="1" zPosition="12" font="Regular;26" halign="center" valign="center" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="410,47" size="870,35" backgroundColor="background20" transparent="1" zPosition="12" font="Regular;26" halign="center" valign="center" noWrap="1">
       <convert type="GlamourBase">FreqInfo</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="410,85" size="870,35" backgroundColor="background20" transparent="1" zPosition="13" font="Regular; 26" halign="center" valign="center" noWrap="1">
+    <widget source="session.CurrentService" render="Label" position="410,82" size="870,35" backgroundColor="background20" transparent="1" zPosition="13" font="Regular; 26" halign="center" valign="center" noWrap="1">
       <convert type="GlamourBase">Orbital</convert>
     </widget>
     <ePixmap pixmap="GlamourAuraRose/menu/accentglowb540.png" position="1100,95" size="540,30" zPosition="-10" alphatest="blend" transparent="1" />
     <eLabel position="1280,57" size="2,65" halign="center" font="Regular; 25" backgroundColor="red" transparent="0" valign="center" zPosition="6" noWrap="1" foregroundColor="red" />
     <eLabel position="1445,42" size="1,65" halign="center" font="Regular; 25" backgroundColor="rose" transparent="0" valign="center" zPosition="6" noWrap="1" foregroundColor="rose" />
     <!-- Signal info -->
-    <eLabel text="SNR:" position="1285,42" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
-    <widget source="session.FrontendStatus" render="Label" position="1340,42" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="rose1" zPosition="3" noWrap="1" valign="center">
+    <eLabel text="SNR:" position="1285,40" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1340,40" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="rose1" zPosition="3" noWrap="1" valign="center">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
-    <eLabel text="AGC:" position="1285,69" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
-    <widget source="session.FrontendStatus" render="Label" position="1340,69" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="rose" valign="center" zPosition="3" noWrap="1">
+    <eLabel text="AGC:" position="1285,67" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1340,67" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="rose" valign="center" zPosition="3" noWrap="1">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <eLabel text="BER:" position="1285,95" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
-    <widget source="session.FrontendStatus" render="Label" position="1340,95" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="rose" valign="center" zPosition="3" noWrap="1">
+    <eLabel text="BER:" position="1285,93" size="60,30" halign="center" font="Regular; 25" backgroundColor="background20" transparent="1" valign="center" zPosition="2" noWrap="1" />
+    <widget source="session.FrontendStatus" render="Label" position="1340,93" size="105,30" font="Regular; 25" backgroundColor="background20" transparent="1" halign="center" foregroundColor="rose" valign="center" zPosition="3" noWrap="1">
       <convert type="FrontendInfo">BER</convert>
     </widget>
   </screen>
