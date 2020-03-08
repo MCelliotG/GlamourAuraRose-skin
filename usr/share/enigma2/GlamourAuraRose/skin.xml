@@ -2796,21 +2796,21 @@
   </screen>
   <!-- 08. Numerical Input -->
   <screen name="NumericalTextInputHelpDialog" position="540,760" size="1305,90" backgroundColor="background20" flags="wfNoBorder" zPosition="12">
-  <ePixmap pixmap="GlamourAuraRose/menu/accentglowt810.png" position="30,0" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
-  <ePixmap pixmap="GlamourAuraRose/menu/accentglowb810.png" position="470,45" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
-  <widget name="key1" position="50,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-  <widget name="key2" position="280,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-  <widget name="key3" position="510,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-  <widget name="key4" position="740,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-  <widget name="key5" position="970,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
-  <widget name="key6" position="50,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-  <widget name="key7" position="280,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-  <widget name="key8" position="510,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-  <widget name="key9" position="740,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-  <widget name="key0" position="970,45" size="285,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
-  <widget name="help1" position="0,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="amaryllis" />
-  <widget name="help2" position="1255,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="amaryllis" />
-</screen>
+    <ePixmap pixmap="GlamourAuraRose/menu/accentglowt810.png" position="30,0" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="GlamourAuraRose/menu/accentglowb810.png" position="470,45" size="810,45" zPosition="5" alphatest="blend" transparent="1" />
+    <widget name="key1" position="50,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+    <widget name="key2" position="280,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+    <widget name="key3" position="510,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+    <widget name="key4" position="740,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+    <widget name="key5" position="970,0" size="230,45" font="Console; 26" halign="center" valign="bottom" zPosition="4" />
+    <widget name="key6" position="50,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+    <widget name="key7" position="280,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+    <widget name="key8" position="510,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+    <widget name="key9" position="740,45" size="230,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+    <widget name="key0" position="970,45" size="285,45" font="Console; 26" halign="center" valign="center" zPosition="4" />
+    <widget name="help1" position="0,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="amaryllis" />
+    <widget name="help2" position="1255,0" size="50,90" font="Console; 80" halign="center" valign="center" noWrap="1" zPosition="4" foregroundColor="amaryllis" />
+  </screen>
   <!-- 09. Subtitles -->
   <screen name="Subtitles" position="0,0" size="1920,1080" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground1" />
@@ -3003,9 +3003,9 @@
     <widget source="ServiceEvent" render="Progress" pixmap="GlamourAuraRose/pointers/pointer_white.png" alphatest="blend" position="370,137" size="295,8" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=1,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,235" size="720,500" font="RegularB; 30" backgroundColor="amaryllis" transparent="1" valign="top" zPosition="4">
-      <convert type="EventName">ExtendedDescription</convert>
-    </widget>
+    <widget source="ServiceEvent" render="GlamRun" options="movetype=running,startpoint=0,direction=top,steptime=1,repeat=2,startdelay=5000,wrap,oneshot=1,always=0" position="50,225" size="720,525" font="RegularB; 29" backgroundColor="amaryllis" transparent="1" valign="top" zPosition="4">
+  <convert type="EventName">ExtendedDescription</convert>
+</widget>
     <!-- NEXT EVENTS -->
     <widget source="ServiceEvent" render="Label" position="50,755" size="80,40" halign="left" valign="top" foregroundColor="amarillo" backgroundColor="background20" transparent="1" noWrap="1" font="Regular; 29" zPosition="1">
       <convert type="GlamNextEvents">Event1,beginTime</convert>
@@ -3941,7 +3941,7 @@
     <widget source="introduction" render="Label" position="805,805" size="905,50" font="Regular; 32" halign="center" backgroundColor="background20" transparent="1" zPosition="5" foregroundColor="rose1" />
     <widget name="SkinList" font="RegularB; 32" position="805,75" size="900,700" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraRose/selections/contextsel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="5" />
   </screen>
-  <screen name="SkinSelectorSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
+  <screen name="SkinSelectorSummary" flags="wfNoBorder" position="0,0" size="0,0" />
   <!-- 11. Subtitle Quickmenu -->
   <screen name="QuickSubtitlesConfigMenu" title="Subtitle Quickmenu" position="0,0" size="1920,575" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="GlamourAuraRose/menu/accentglowtl.png" position="0,0" size="300,270" zPosition="-10" alphatest="blend" transparent="1" />
@@ -5172,8 +5172,8 @@ if not self["videofps"].text:
     <widget name="config" font="Regular; 30" position="540,75" size="1305,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraRose/selections/aurasel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="FullKeys1" />
   </screen>
-  <!-- 05. IPKG -->
-  <screen name="Ipkg" position="0,0" size="1920,1080" title="Installing software..." flags="wfNoBorder" backgroundColor="transparent">
+  <!-- 05. OPKG -->
+  <screen name="Opkg" position="0,0" size="1920,1080" title="Installing software..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
@@ -5183,15 +5183,15 @@ if not self["videofps"].text:
     <widget name="status" position="600,495" size="1170,150" font="Regular; 33" backgroundColor="background20" transparent="1" zPosition="6" halign="center" valign="top" />
     <widget name="slider" position="600,665" size="1170,25" pixmap="GlamourAuraRose/pointers/slider_main.png" alphatest="blend" transparent="1" zPosition="7" />
   </screen>
-  <screen name="Opkg" position="0,0" size="1920,1080" title="Installing software..." flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="Ipkg" />
+  <screen name="Ipkg" position="0,0" size="1920,1080" title="Installing software..." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="Opkg" />
   </screen>
   <!-- 06. Packet Manager -->
   <screen name="PacketManager" position="0,0" size="1920,1080" title="PacketManager" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="MainBackground2" />
-  <panel name="ClockLabel1" />
-  <panel name="Title1" />
-  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
     <widget source="list" render="Listbox" position="540,90" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraRose/selections/aurasel1305.png" alphatest="blend" zPosition="5">
       <convert type="TemplatedMultiContent">
         {"template": [
@@ -5205,8 +5205,8 @@ if not self["videofps"].text:
         }
       </convert>
     </widget>
-  <panel name="FullKeys1" />
-</screen>
+    <panel name="FullKeys1" />
+  </screen>
   <!-- 07. Plugin Details -->
   <screen name="PluginDetails" position="0,0" size="1920,1080" title="Plugin details" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
@@ -5222,12 +5222,12 @@ if not self["videofps"].text:
   </screen>
   <!-- 08. Plugin Manager -->
   <screen name="PluginManager" position="0,0" size="1920,1080" title="Plugin manager" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="MainBackground2" />
-  <panel name="ClockLabel1" />
-  <panel name="Title1" />
-  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
-  <widget source="list" render="Listbox" position="540,90" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraRose/selections/aurasel1305.png" alphatest="blend" zPosition="5">
-    <convert type="TemplatedMultiContent">
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget source="list" render="Listbox" position="540,90" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraRose/selections/aurasel1305.png" alphatest="blend" zPosition="5">
+      <convert type="TemplatedMultiContent">
       {"templates":
         {"default": (90,[
             MultiContentEntryPixmapAlphaBlend(pos = (30, 9), size = (72, 72), png = 5), # index 5 is the status pixmap
@@ -5243,18 +5243,18 @@ if not self["videofps"].text:
         "itemHeight": 90
       }
       </convert>
-  </widget>
-  <widget source="status" render="Label" position="540,810" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="amaryllis" backgroundColor="background20" />
-  <panel name="FullKeys1" />
-</screen>
+    </widget>
+    <widget source="status" render="Label" position="540,810" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="amaryllis" backgroundColor="background20" />
+    <panel name="FullKeys1" />
+  </screen>
   <!-- 09. Plugin Manager Info -->
   <screen name="PluginManagerInfo" position="0,0" size="1920,1080" title="Plugin manager activity" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="MainBackground2" />
-  <panel name="ClockLabel1" />
-  <panel name="Title1" />
-  <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
-  <widget source="list" render="Listbox" position="540,80" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraRose/selections/updatesel.png" alphatest="blend" zPosition="5">
-  <convert type="TemplatedMultiContent">
+    <panel name="MainBackground2" />
+    <panel name="ClockLabel1" />
+    <panel name="Title1" />
+    <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
+    <widget source="list" render="Listbox" position="540,80" size="1305,720" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColor="background20" transparent="1" selectionPixmap="GlamourAuraRose/selections/updatesel.png" alphatest="blend" zPosition="5">
+      <convert type="TemplatedMultiContent">
         {"template": [
             MultiContentEntryPixmapAlphaBlend(pos = (10, 4), size = (72, 72), flags = BT_SCALE, png = 2), # index 2 is the status pixmap
             MultiContentEntryText(pos = (90, 0), size = (1200, 45), font=0, flags = RT_HALIGN_LEFT, text = 0, color=0xce0020, color_sel=0xe94457), # index 0 is the name
@@ -5264,14 +5264,14 @@ if not self["videofps"].text:
         "itemHeight": 80
         }
       </convert>
-  </widget>
-  <widget source="status" render="Label" position="540,800" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="amaryllis" backgroundColor="background20" />
-  <panel name="FullKeys1" />
- </screen>
+    </widget>
+    <widget source="status" render="Label" position="540,800" size="1305,50" halign="center" font="Regular; 33" transparent="1" zPosition="5" valign="center" foregroundColor="amaryllis" backgroundColor="background20" />
+    <panel name="FullKeys1" />
+  </screen>
   <!-- 10. Plugin Manager Help -->
   <screen name="PluginManagerHelp" position="0,0" size="1920,1080" title="Plugin manager help" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="PluginManagerInfo" />
-</screen>
+    <panel name="PluginManagerInfo" />
+  </screen>
   <!-- 11. Restore Menu Image -->
   <screen name="RestoreMenuImage" position="0,0" size="1920,1080" title="Restore Backups" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
@@ -5281,8 +5281,8 @@ if not self["videofps"].text:
     <widget name="filelist" font="Regular; 30" position="540,75" size="1305,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraRose/selections/aurasel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="FullKeys1" />
   </screen>
-  <!-- 12. IPKG Installer  -->
-  <screen name="IpkgInstaller" position="0,0" size="1920,1080" title="Installing..." flags="wfNoBorder" backgroundColor="transparent">
+  <!-- 12. OPKG Installer  -->
+  <screen name="OpkgInstaller" position="0,0" size="1920,1080" title="Installing..." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
@@ -5290,17 +5290,20 @@ if not self["videofps"].text:
     <widget name="list" font="Regular; 30" position="540,75" size="1305,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraRose/selections/aurasel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="FullKeys1" />
   </screen>
-  <screen name="OpkgInstaller" position="0,0" size="1920,1080" title="Installing..." flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="IpkgInstaller" />
+  <screen name="IpkgInstaller" position="0,0" size="1920,1080" title="Installing..." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="OpkgInstaller" />
   </screen>
-  <!-- 13. IPKG Menu  -->
-  <screen name="IPKGMenu" position="0,0" size="1920,1080" title="Select IPKG source....." flags="wfNoBorder" backgroundColor="transparent">
+  <!-- 13. OPKG Menu  -->
+  <screen name="OPKGMenu" position="0,0" size="1920,1080" title="Select OPKG source....." flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/softupdate.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="filelist" font="Regular; 30" position="540,70" size="1305,750" scrollbarMode="showOnDemand" selectionPixmap="GlamourAuraRose/selections/aurasel.png" alphatest="blend" backgroundColor="background20" itemHeight="50" enableWrapAround="1" transparent="1" zPosition="9" />
     <panel name="FullKeys1" />
+  </screen>
+  <screen name="IPKGMenu" position="0,0" size="1920,1080" title="Select IPKG source....." flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="OPKGMenu" />
   </screen>
   <!-- 14. Restore Menu  -->
   <screen name="RestoreMenu" position="0,0" size="1920,1080" title="Restore Backups" flags="wfNoBorder" backgroundColor="transparent">
@@ -5362,14 +5365,17 @@ if not self["videofps"].text:
     </widget>
     <panel name="FullKeys1" />
   </screen>
-  <!-- 19. IPKG Source  -->
-  <screen name="IPKGSource" position="0,0" size="1920,1080" title="IPKG source" flags="wfNoBorder" backgroundColor="transparent">
+  <!-- 19. OPKG Source  -->
+  <screen name="OPKGSource" position="0,0" size="1920,1080" title="OPKG source" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/softupdate.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="text" position="530,480" size="1305,120" zPosition="3" font="Regular; 36" foregroundColor="white" backgroundColor="background20" transparent="1" valign="center" halign="left" />
     <panel name="FullKeys1" />
+  </screen>
+  <screen name="IPKGSource" position="0,0" size="1920,1080" title="IPKG source" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="OPKGSource" />
   </screen>
   <!-- 20. Software Manager Setup  -->
   <screen name="SoftwareManagerSetup" position="0,0" size="1920,1080" title="Select service to add..." flags="wfNoBorder" backgroundColor="transparent">
@@ -5940,16 +5946,16 @@ if not self["videofps"].text:
     <panel name="RemoteWizard" />
     <widget name="portpic" position="740,630" size="192,192" zPosition="18" transparent="1" alphatest="blend" />
   </screen>
-  <!-- 09. Install Ipkg Updater -->
-  <screen name="InstallWizardIpkgUpdater" position="0,0" size="1920,1080" title="Install Ipkg Updater" flags="wfNoBorder" backgroundColor="transparent">
+  <!-- 09. Install Opkg Updater -->
+  <screen name="InstallWizardOpkgUpdater" position="0,0" size="1920,1080" title="Install Opkg Updater" flags="wfNoBorder" backgroundColor="transparent">
     <panel name="MainBackground2" />
     <panel name="ClockLabel1" />
     <panel name="Title1" />
     <ePixmap pixmap="GlamourAuraRose/icons/plugins.png" position="50,315" size="400,400" transparent="1" alphatest="on" zPosition="5" />
     <widget source="statusbar" render="Label" position="540,275" size="1305,600" font="Regular; 36" backgroundColor="background20" transparent="1" zPosition="7" foregroundColor="amaryllis" valign="center" halign="center" />
   </screen>
-  <screen name="InstallWizardOpkgUpdater" position="0,0" size="1920,1080" title="Install Opkg Updater" flags="wfNoBorder" backgroundColor="transparent">
-    <panel name="InstallWizardIpkgUpdater" />
+  <screen name="InstallWizardIpkgUpdater" position="0,0" size="1920,1080" title="Install Ipkg Updater" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="InstallWizardOpkgUpdater" />
   </screen>
   <!-- 10. AutoInstall Wizard -->
   <screen name="AutoInstallWizard" position="0,0" size="1920,1080" title="AutoInstall" flags="wfNoBorder" backgroundColor="transparent">
@@ -5958,7 +5964,7 @@ if not self["videofps"].text:
     <panel name="Title1" />
     <ePixmap position="50,315" size="400,400" pixmap="GlamourAuraRose/icons/packet.png" alphatest="on" transparent="1" zPosition="5" />
     <widget name="header" position="540,60" size="1305,50" font="RegularB; 36" backgroundColor="background20" foregroundColor="amaryllis" transparent="1" zPosition="5" halign="left" valign="top" noWrap="1" />
-    <widget name="progress" position="540,115" size="1305,25" backgroundColor="background90" foregroundColor="clearcyan" zPosition="7" />
+    <widget name="progress" position="540,115" size="1305,25" backgroundColor="background90" foregroundColor="clearrose" zPosition="7" />
     <widget name="AboutScrollLabel" position="540,145" size="1305,800" font="Console; 28" backgroundColor="background20" zPosition="8" halign="left" foregroundColor="white" valign="top" />
   </screen>
 </skin>
